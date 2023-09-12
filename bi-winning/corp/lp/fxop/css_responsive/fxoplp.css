@@ -83,13 +83,14 @@ html {
   -webkit-tap-highlight-color: transparent;
   font-size: 62.5%;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight:500;
+}
 body {
   background: #fff;
   color: #292c22;
-  font-family: 'Hiragino UD Sans W3 JIS2004';
-  -webkit-font-feature-settings : "palt";
-  font-feature-settings : "palt";
   font-size: 1.2em;
   text-align: left;
   line-height: 1.5;
@@ -171,7 +172,6 @@ img, svg {
   padding-top: 16px;
   border-top: 3px solid #45a10d;
   color: #45a10d;
-  font-family: 'Hiragino UD Sans W6 JIS2004';  
   font-size: 2.6rem;
   line-height: 1.2;
   text-align: center;
@@ -192,7 +192,6 @@ img, svg {
   padding: 5px 10px;
   background-color: #97cc1d;
   color: #fff;
-  font-family: 'Hiragino UD Sans W6 JIS2004';
   font-size: 1.8rem;
   line-height: 1.3;
   text-align: left;
@@ -214,6 +213,7 @@ img, svg {
   .c-ttl-02 {
     padding: 8px 20px;
     font-size: 2.4rem;
+    font-weight:900;
   }
 }
 
@@ -266,11 +266,9 @@ img, svg {
 
 /* font family ++++++++++++++++ */
 .u-ff-go-w3 {
-  font-family: 'Hiragino UD Sans W3 JIS2004', sans-serif;
 }
 
 .u-ff-go-w6 {
-  font-family: 'Hiragino UD Sans W6 JIS2004', sans-serif;
 }
 
 /* font color ++++++++++++++++ */
@@ -514,7 +512,6 @@ img, svg {
 .jumbotron .text-02 {
   font-size: 2.8rem;
   font-size: 8.75vw;/* 28*100/320 */
-  font-family: 'TypelaboN Heavy';
   line-height: 1.14;
 }
 
@@ -562,7 +559,7 @@ img, svg {
     width: 50%;
     max-width: 450px;
     height: 100%;
-    background-image: url(/corp/lp/fxop/images_responsive/bg-jumbotron-pc.jpg);
+    background-image: url(../images_responsive/bg-jumbotron-pc.jpg);
     content: '';
   }
 
@@ -580,6 +577,7 @@ img, svg {
     width: 50%;
     margin-right: auto;
     font-size: 2rem;
+    font-weight:700;
     line-height: 1.5;
   }
   
@@ -588,6 +586,7 @@ img, svg {
     margin-right: auto;
     margin-top: 8px;
     font-size: 5rem;
+    font-weight:900;
     line-height: 1.2;
   }
   
@@ -708,23 +707,23 @@ img, svg {
 }
 
 .local-nav li:nth-child(1) a::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-localnav01.png);
+  background-image: url(../images_responsive/icon-localnav01.png);
 }
 .local-nav li:nth-child(2) a::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-localnav02.png);
+  background-image: url(../images_responsive/icon-localnav02.png);
 }
 .local-nav li:nth-child(3) a::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-localnav03.png);
+  background-image: url(../images_responsive/icon-localnav03.png);
 }
 .local-nav li:nth-child(4) a::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-localnav04.png);
+  background-image: url(../images_responsive/icon-localnav04.png);
 }
 
 .local-nav li a::after {
   right: 4px;
   width: 17px;
   height: 17px;
-  background-image: url(/corp/lp/fxop/images_responsive/icon-arrow-down.png);
+  background-image: url(../images_responsive/icon-arrow-down.png);
   margin-top: -8px;
 }
 
@@ -770,7 +769,8 @@ img, svg {
 
 @media screen and (min-width: 900px) {
   .local-nav li a {
-    font-size: 1.8rem;
+    font-size: 15px;
+    line-height: 29px;
   }
 }
 
@@ -860,14 +860,14 @@ img, svg {
   width: 18px;
   height: 18px;
   margin-right: 7px;
-  background-image: url(/corp/lp/fxop/images_responsive/icon-arrow-open.png);
+  background-image: url(../images_responsive/icon-arrow-open.png);
   background-size: 100%;
   vertical-align: middle;
   content: '';
 }
 
 .about-ttl.is-active a::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-arrow-close.png);
+  background-image: url(../images_responsive/icon-arrow-close.png);
 }
 
 .sec01-body {
@@ -893,7 +893,7 @@ img, svg {
 .yosoku {
   margin-top: 12px;
   padding: 5px 10px 10px;
-  background: url(/corp/lp/fxop/images_responsive/bg-pattern01.png) repeat 0 0;
+  background: url(../images_responsive/bg-pattern01.png) repeat 0 0;
   background-size: 49px 49px;
 }
 
@@ -931,7 +931,7 @@ img, svg {
 .yosoku dd {
   padding: 7px;
   border: 1px solid #ef7171;
-  background: #fff url(/corp/lp/fxop/images_responsive/bg-sec01-true.png) no-repeat center center;
+  background: #fff url(../images_responsive/bg-sec01-true.png) no-repeat center center;
   background-size: 40px 40px;
   font-size: 1.4rem;
   line-height: 1.2;
@@ -939,7 +939,7 @@ img, svg {
 
 .yosoku dl:nth-child(2) dd {
   border-color: #6ea6cc;
-  background-image: url(/corp/lp/fxop/images_responsive/bg-sec01-false.png);
+  background-image: url(../images_responsive/bg-sec01-false.png);
 }
 
 .yosoku-formulate {
@@ -1108,7 +1108,7 @@ img, svg {
 .reason-flow {
   position: relative;
   display: table-cell;
-  background: url(/corp/lp/fxop/images_responsive/bg-sec02-flow03-sp.png) top;
+  background: url(../images_responsive/bg-sec02-flow03-sp.png) top;
   background-size: 100% auto;
   vertical-align: top;
 }
@@ -1120,7 +1120,7 @@ img, svg {
   display: block;
   width: 5.4em;
   height: 5.4em;
-  background: url(/corp/lp/fxop/images_responsive/bg-sec02-flow-hatchukun.png) top;
+  background: url(../images_responsive/bg-sec02-flow-hatchukun.png) top;
   background-size: 100%;
   content: '';
 }
@@ -1151,14 +1151,14 @@ img, svg {
   padding-top: 20px;
 }
 .reason-flow li:nth-child(1)::before {
-  background-image: url(/corp/lp/fxop/images_responsive/bg-sec02-flow01-sp.png);
+  background-image: url(../images_responsive/bg-sec02-flow01-sp.png);
   content: '';
 }
 .reason-flow li:nth-child(2) {
   z-index: 2;
 }
 .reason-flow li:nth-child(2)::before {
-  background-image: url(/corp/lp/fxop/images_responsive/bg-sec02-flow02-sp.png);
+  background-image: url(../images_responsive/bg-sec02-flow02-sp.png);
   content: '';
 }
 
@@ -1186,7 +1186,7 @@ img, svg {
 .reason-point02 {
   min-height: 114px;
   margin-top: 25px;
-  background: url(/corp/lp/fxop/images_responsive/bg-sec02-money.png) no-repeat right 50px;
+  background: url(../images_responsive/bg-sec02-money.png) no-repeat right 50px;
   background-size: 130px auto;
 }
 
@@ -1198,7 +1198,7 @@ img, svg {
 .reason-point03 {
   min-height: 114px;
   margin-top: 25px;
-  background: url(/corp/lp/fxop/images_responsive/bg-sec02-balance.png) no-repeat right 50px;
+  background: url(../images_responsive/bg-sec02-balance.png) no-repeat right 50px;
   background-size: 130px auto;
 }
 
@@ -1259,7 +1259,7 @@ img, svg {
     display: table;
     width: 100%;
     border-radius: 8px;
-    background: url(/corp/lp/fxop/images_responsive/bg-sec02-flow03-pc.png) top;
+    background: url(../images_responsive/bg-sec02-flow03-pc.png) top;
     background-size: auto;
     box-shadow: 2px 2px 0px 0px #91ca06;
   }
@@ -1289,13 +1289,13 @@ img, svg {
     padding-top: 0;
   }
   .reason-flow li:nth-child(1)::before {
-    background-image: url(/corp/lp/fxop/images_responsive/bg-sec02-flow01-pc.png);
+    background-image: url(../images_responsive/bg-sec02-flow01-pc.png);
   }
   .reason-flow li:nth-child(2) {
     width: 36%;
   }
   .reason-flow li:nth-child(2)::before {
-    background-image: url(/corp/lp/fxop/images_responsive/bg-sec02-flow02-pc.png);
+    background-image: url(../images_responsive/bg-sec02-flow02-pc.png);
   }
   
   .reason-flow dt {
@@ -1325,7 +1325,7 @@ img, svg {
     min-height: 240px;
     margin-top: 0;
     padding-bottom: 120px;
-    background: url(/corp/lp/fxop/images_responsive/bg-sec02-money.png) no-repeat center bottom;
+    background: url(../images_responsive/bg-sec02-money.png) no-repeat center bottom;
     background-size: 200px auto;
   }
   
@@ -1340,7 +1340,7 @@ img, svg {
     min-height: 260px;
     margin: 0 0 0 auto;
     padding-bottom: 120px;
-    background: url(/corp/lp/fxop/images_responsive/bg-sec02-balance.png) no-repeat center bottom;
+    background: url(../images_responsive/bg-sec02-balance.png) no-repeat center bottom;
     background-size: 200px auto;
   }
   
@@ -1361,7 +1361,7 @@ img, svg {
   padding: 8px 12px;
   border-radius: 3px;
   border: 2px solid #97cc1d;
-  background: url(/corp/lp/fxop/images_responsive/bg-pattern02.png);
+  background: url(../images_responsive/bg-pattern02.png);
 }
 
 .tool-list li {
@@ -1381,11 +1381,11 @@ img, svg {
 }
 
 .tool-pc li::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-bullet-navy.png);
+  background-image: url(../images_responsive/icon-bullet-navy.png);
 }
 
 .tool-sp li::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-bullet-lime.png);
+  background-image: url(../images_responsive/icon-bullet-lime.png);
 }
 
 /* SP  ----*/
@@ -1422,7 +1422,7 @@ img, svg {
     min-height: 256px;
     margin-top: 24px;
     padding: 15px 0 0 44%;
-    background: url(/corp/lp/fxop/images_responsive/bg-sec03-pc.png) no-repeat top;
+    background: url(../images_responsive/bg-sec03-pc.png) no-repeat top;
     background-size: 100% auto;
   }
   
@@ -1445,10 +1445,10 @@ img, svg {
   }
   
   .tool-pc .tool-list {
-    width: 258px;
-    height: 129px;
-    margin-top: 16px;
-    background-image: url(/corp/lp/fxop/images_responsive/bg-sec03-pc-list.png);
+	width: 258px;
+    height: 107px;
+    margin-top: 165px;
+    background-image: url(../images_responsive/bg-sec03-pc-list.png);
   }
   
   /* SP  ----*/
@@ -1467,7 +1467,7 @@ img, svg {
     height: 153px;
     padding-top: 14px;
     padding-left: 24px;
-    background-image: url(/corp/lp/fxop/images_responsive/bg-sec03-sp-list.png);
+    background-image: url(../images_responsive/bg-sec03-sp-list.png);
   }
   
   .tool-sp .tool-list li {
@@ -1482,6 +1482,7 @@ img, svg {
 @media screen and (min-width: 900px) {
   .tool-pc-ttl {
     font-size: 3.1rem;
+    font-weight:900;
   }
   
   .tool-pc-text {
@@ -1543,13 +1544,13 @@ img, svg {
   width: 10px;
   height: 10px;
   margin-right: 4px;
-  background-image: url(/corp/lp/fxop/images_responsive/icon-arrow-open-yellow.png);
+  background-image: url(../images_responsive/icon-arrow-open-yellow.png);
   background-size: 100%;
   content: '';
 }
 
 .banking-more-btn.is-active::before {
-  background-image: url(/corp/lp/fxop/images_responsive/icon-arrow-close-yellow.png);
+  background-image: url(../images_responsive/icon-arrow-close-yellow.png);
 }
 
 /* security ----*/
@@ -1668,7 +1669,7 @@ img, svg {
   .support-body {
     min-height: 190px;
     margin: 24px auto;
-    background: url(/corp/lp/fxop/images_responsive/bg-sec05-support.png) no-repeat right top;
+    background: url(../images_responsive/bg-sec05-support.png) no-repeat right top;
     background-size: 70% auto;
   }
   .support-body + img {
@@ -1756,17 +1757,17 @@ img, svg {
 }
 
 .kaisetsu-flow li:nth-child(1) {
-  background-image: url(/corp/lp/fxop/images_responsive/bg-sec06-flow-step1-sp.png);
+  background-image: url(../images_responsive/bg-sec06-flow-step1-sp.png);
 }
 .kaisetsu-flow li:nth-child(2) {
-  background-image: url(/corp/lp/fxop/images_responsive/bg-sec06-flow-step2-sp.png);
+  background-image: url(../images_responsive/bg-sec06-flow-step2-sp.png);
 }
 .kaisetsu-flow li:nth-child(3) {
   padding: 0;
   background-color: #45a10d;
 }
 .kaisetsu-flow li:nth-child(4) {
-  background-image: url(/corp/lp/fxop/images_responsive/bg-sec06-flow-step3-sp.png);
+  background-image: url(../images_responsive/bg-sec06-flow-step3-sp.png);
 }
 
 .kaisetsu-flow li p {
@@ -1916,3 +1917,10 @@ img, svg {
     width: 95%;
   }
 }  
+li.typesquare_option{
+	font-size:12.5px;
+	font-weight:700;
+}
+span .text typesquare_option{
+	font-weight:900;
+}
